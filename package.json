@@ -15,8 +15,9 @@
   "dependencies": {
     "@agility/gatsby-image-agilitycms": "^1.0.0",
     "@agility/gatsby-source-agilitycms": "^3.0.0",
+    "@tailwindcss/typography": "^0.4.0",
     "dotenv": "^8.1.0",
-    "gatsby": "^3.0.4",
+    "gatsby": "^3.2.1",
     "gatsby-image": "^3.0.0",
     "gatsby-plugin-image": "^1.0.1",
     "gatsby-plugin-netlify": "^3.0.0",
@@ -24,10 +25,15 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^5.2.1",
+    "react-icons": "^4.2.0",
     "truncate-html": "^1.0.2"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "autoprefixer": "^10.2.5",
+    "gatsby-plugin-postcss": "^4.2.0",
+    "postcss": "^8.2.10",
+    "prettier": "^1.18.2",
+    "tailwindcss": "^2.1.1"
   },
   "repository": {
     "type": "git",

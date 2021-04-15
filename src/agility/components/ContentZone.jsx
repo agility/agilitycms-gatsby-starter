@@ -1,5 +1,6 @@
 import React from "react"
 
+// this component handles resolving which module should be rendered on your page
 const ContentZone = ({ name, page, dynamicPageItem }) => {
   const Modules = () => {
     let modules = []
@@ -25,7 +26,7 @@ const ContentZone = ({ name, page, dynamicPageItem }) => {
 
         // check for .jsx file extension
         try {
-          ModuleComponentToRender = require(`../../modules/${moduleDefName}.jsx`)
+          ModuleComponentToRender = require(`../../components/agility-pageModules/${moduleDefName}.jsx`)
             .default
         } catch (err) {
           console.log(`Could not load Module: ${moduleDefName} via jsx.`)
@@ -33,7 +34,7 @@ const ContentZone = ({ name, page, dynamicPageItem }) => {
         // if no .jsx file extension, check for .js
         if (!ModuleComponentToRender) {
           try {
-            ModuleComponentToRender = require(`../../modules/${moduleDefName}.js`)
+            ModuleComponentToRender = require(`../../components/agility-pageModules/${moduleDefName}.js`)
               .default
           } catch (err) {
             console.log(`Could not load Module: ${moduleDefName} via js.`)
