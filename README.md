@@ -97,11 +97,11 @@ import { Link } from 'gatsby';
 
 ### How to Resolve Linked Content
 
-While you are sourcing and querying content in gatsby, you are likely to come across a scenario where you need to retrieve a content item and its related content. In Agility CMS, Linked Content fields are used to related content to one another in various ways.
+While you are sourcing and querying content in Gatsby, you are likely to come across a scenario where you need to retrieve a content item and its related content. In Agility CMS, Linked Content fields are used to related content to one another in various ways.
 
-When querying a Post, for example, you may want to also retrieve the details for the Author. On your Post GraphQL node, you may notice an author property, however, it will only contain a contentid reference, not the entire node representing the Author.
+When querying a Post, for example, you may want to also retrieve the details for the Category. On your Post GraphQL node, you may notice a category property, however, it will only contain a contentid reference, not the entire node representing the Category.
 
-You'll need to resolve this Linked Content when you need it.
+You'll need to resolve this Linked Content when you need it using resolvers in the `gatsby-node.js` file.
 
 [How to Resolve Linked Content](https://help.agilitycms.com/hc/en-us/articles/360042606992)
 
