@@ -107,7 +107,7 @@ You'll need to resolve this Linked Content when you need it using resolvers in t
 
 ### How to Preview Content
 
-Previewing content prior to publishing is crucial for Editors. We can set up and configure Previews to work with Gatsby Cloud so editors can preview content as their making edits within Agility CMS.
+Previewing content prior to publishing is crucial for Editors. You can set up and configure Previews to work with Gatsby Cloud so editors can preview content as their making edits within Agility CMS.
 
 [Set up Preview with Gatsby Cloud](https://help.agilitycms.com/hc/en-us/articles/360049998492)
 
