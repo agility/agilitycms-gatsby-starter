@@ -46,7 +46,7 @@ When running your site in `development` mode, you will see the latest content in
 #### npm
 
 1. `npm install`
-2. `npm run dev`
+2. `npm run dev` or `gatsby develop`
 
 To clear your content cache locally, run `gatsby clean`
 
