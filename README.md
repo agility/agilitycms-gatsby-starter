@@ -36,7 +36,7 @@ To start using the Agility CMS & Gatsby Starter, [sign up](https://agilitycms.co
 
 ### Development Mode
 
-When running your site in `development` mode, you will see the latest content in real-time from the CMS.
+When running your site in `development` mode, you will see the latest content in from the CMS.
 
 #### yarn
 
