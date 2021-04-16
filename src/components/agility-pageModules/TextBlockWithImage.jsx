@@ -11,7 +11,7 @@ const TextBlockWithImage = ({ item }) => {
 
   // function to generate proper link
   const generateLink = (url, target, text) => {
-    // if relative link, use next/link
+    // if relative link, use Gatsby Link
     if (isUrlAbsolute(url) === false) {
       return (
         <Link
