@@ -4,6 +4,7 @@ const getDynamicPageItem = ({ contentID, agilityItem }) => {
   }
 }
 
+// helper to build the page view model from the page json we get back from graphql
 const buildPageViewModel = ({ pageContext, data }) => {
   //Check if we have a dynamic page item contentID, if so, we are rendering a dynamic page and should pass the content item to Modules
   const dynamicPageItem = getDynamicPageItem({
@@ -28,6 +29,7 @@ const buildPageViewModel = ({ pageContext, data }) => {
   }
 }
 
+// helper to get linked content item
 const getLinkedContentItem = ({ type, linkedContentFieldName }) => {
   const fieldResolver = {
     //we are telling it is going to return the 'agilityAuthor' node type
@@ -55,6 +57,7 @@ const getLinkedContentItem = ({ type, linkedContentFieldName }) => {
   return fieldResolver
 }
 
+// helper to get linked content list
 const getLinkedContentList = ({ type, linkedContentFieldName }) => {
   const fieldResolver = {
     type: [type],
@@ -72,6 +75,7 @@ const getLinkedContentList = ({ type, linkedContentFieldName }) => {
   return fieldResolver
 }
 
+// helper to get dynamic page item sitemap node
 const getDynamicPageItemSitemapNode = () => {
   const fieldResolver = {
     type: "agilitySitemapNode",
@@ -93,6 +97,7 @@ const getDynamicPageItemSitemapNode = () => {
   return fieldResolver
 }
 
+// helpers to clean and render html
 const renderHTML = html => {
   return { __html: cleanHTML(html) }
 }

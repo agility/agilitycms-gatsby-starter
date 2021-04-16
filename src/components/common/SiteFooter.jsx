@@ -48,6 +48,7 @@ const SiteFooter = () => {
             target="_blank"
             rel="noreferrer"
             title="Agility CMS"
+            className="text-center"
           >
             <img src={agilityLogo} alt="Agility CMS" width="90" height="24" />
           </a>
@@ -58,7 +59,7 @@ const SiteFooter = () => {
             for demo purposes. You can use this to preview the content you
             created on your Agility CMS account.{"\u00A0"}
             <a
-              href="https://github.com/joshua-isaac/agilitycms-gatsby-starter"
+              href="https://github.com/agilitycms/agilitycms-gatsby-starter"
               title="View on GitHub"
               target="_blank"
               rel="noreferrer"

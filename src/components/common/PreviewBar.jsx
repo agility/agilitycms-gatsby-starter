@@ -61,7 +61,7 @@ class PreviewBar extends Component {
             </div>
             <div>
               <a
-                href="https://github.com/joshua-isaac/agilitycms-gatsby-starter"
+                href="https://github.com/agilitycms/agilitycms-gatsby-starter"
                 target="_blank"
                 rel="noreferrer"
                 title="View on GitHub"

@@ -61,12 +61,12 @@ const SiteHeader = ({ languageCode, isMultiLanguage }) => {
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center" title={header.siteName}>
               <img
                 className="h-14 sm:h-20 w-auto z-50"
                 src={header.logo.url}
                 alt={header.logo.label}
-                title={header.logo.siteName}
+                title={header.siteName}
               />
               <p className="font-bold text-xl text-secondary-500 ml-3 mt-2">
                 {header.siteName}
