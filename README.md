@@ -97,11 +97,36 @@ import { Link } from 'gatsby';
 
 ### Resolving Linked Content
 
-While you are sourcing and querying content in Gatsby, you are likely to come across a scenario where you need to retrieve a content item and its related content. In Agility CMS, Linked Content fields are used to related content to one another in various ways.
+In the agilitycms-gatsby-starter, we resolve Linked Content by using [Gatsby Resolvers](https://www.gatsbyjs.org/blog/2019-03-04-new-schema-customization/). 
 
-When querying a Post, for example, you may want to also retrieve the details for the Category. On your Post GraphQL node, you may notice a category property, however, it will only contain a contentid reference, not the entire node representing the Category.
+Resolvers are added to your `gatsby-node.js` in your site, and they allow you to add a new field to your content node which will handle resolving your Linked Content reference.
 
-You'll need to resolve this Linked Content when you need it using resolvers in the `gatsby-node.js` file.
+This means you are telling GraphQL, when you query a specific property on a node, it will actually run a function to go and get your Linked Content and return it.
+
+An example of this can be found [here](https://github.com/agility/agilitycms-gatsby-starter/blob/main/gatsby-node.js#L155) in this starter site:
+
+```
+// gatsy-node.js
+
+const agility = require('./src/agility/utils')
+
+  const resolvers = {
+    // on the 'agilityPost' node type
+    agilityPost: {
+      // get the sitemap node that represents this item ( i.e. /blog/my-blog-post )
+      sitemapNode: agility.getDynamicPageItemSitemapNode(),
+
+      // get the category
+      linkedContent_agilityCategory: agility.getLinkedContentItem({
+        type: "agilityCategory",
+        linkedContentFieldName: "category",
+      }),
+    },
+  }
+  createResolvers(resolvers)
+}
+
+```
 
 [How to Resolve Linked Content](https://help.agilitycms.com/hc/en-us/articles/360042606992)
 
