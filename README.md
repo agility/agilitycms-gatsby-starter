@@ -95,7 +95,7 @@ import { Link } from 'gatsby';
 </Link>
 ```
 
-### How to Resolve Linked Content
+### Resolving Linked Content
 
 While you are sourcing and querying content in Gatsby, you are likely to come across a scenario where you need to retrieve a content item and its related content. In Agility CMS, Linked Content fields are used to related content to one another in various ways.
 
@@ -105,7 +105,7 @@ You'll need to resolve this Linked Content when you need it using resolvers in t
 
 [How to Resolve Linked Content](https://help.agilitycms.com/hc/en-us/articles/360042606992)
 
-### How to Preview Content
+### Previewing Content
 
 Previewing content prior to publishing is crucial for Editors. You can set up and configure Previews to work with Gatsby Cloud so editors can preview content as their making edits within Agility CMS.
 
