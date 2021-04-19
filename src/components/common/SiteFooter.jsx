@@ -48,9 +48,14 @@ const SiteFooter = () => {
             target="_blank"
             rel="noreferrer"
             title="Agility CMS"
-            className="text-center"
           >
-            <img src={agilityLogo} alt="Agility CMS" width="90" height="24" />
+            <img
+              src={agilityLogo}
+              alt="Agility CMS"
+              width="90"
+              height="24"
+              className="mx-auto"
+            />
           </a>
         </div>
         <div className="flex-grow mb-4 md:mb-0">
