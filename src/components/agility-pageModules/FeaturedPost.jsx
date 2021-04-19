@@ -3,9 +3,9 @@ import truncate from "truncate-html"
 import { Link } from "gatsby"
 import { AgilityImage } from "@agility/gatsby-image-agilitycms"
 
-const FeaturedPost = ({ item }) => {
+const FeaturedPost = ({ module }) => {
   // get module fields
-  const { customFields } = item
+  const { customFields } = module
 
   // get featured post
   const { featuredPost } = customFields

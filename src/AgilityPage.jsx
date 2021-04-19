@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import agilityUtils from "./agility/utils"
-import AgilityPageTemplate from "./agility/components/AgilityPageTemplate"
+import { getPageTemplate } from "./components/agility-pageTemplates"
+// import AgilityPageTemplate from "./agility/components/AgilityPageTemplate"
 import PreviewBar from "./components/common/PreviewBar"
 import SiteHeader from "./components/common/SiteHeader"
 import SiteFooter from "./components/common/SiteFooter"
@@ -24,6 +25,11 @@ export const query = graphql`
 const AgilityPage = ({ pageContext, data }) => {
   // build the page view model
   const viewModel = agilityUtils.buildPageViewModel({ pageContext, data })
+
+  // get our page template
+  const AgilityPageTemplate = getPageTemplate(
+    viewModel.page.templateName.replace(/\s/g, "")
+  )
 
   // if dynamic page, use that description as meta description
   if (viewModel.dynamicPageItem?.seo?.metaDescription) {

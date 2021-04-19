@@ -1,9 +1,9 @@
 import React from "react"
 import { renderHTML } from "../../agility/utils"
 
-const RichTextArea = ({ item }) => {
+const RichTextArea = ({ module }) => {
   // get module fields
-  const { customFields } = item
+  const { customFields } = module
 
   return (
     <div className="relative px-8">

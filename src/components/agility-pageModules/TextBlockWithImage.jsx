@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import { AgilityImage } from "@agility/gatsby-image-agilitycms"
 
-const TextBlockWithImage = ({ item }) => {
+const TextBlockWithImage = ({ module }) => {
   // get module fields
-  const { customFields } = item
+  const { customFields } = module
 
   // function to check whether or not the url is absolute
   const isUrlAbsolute = url => url.indexOf("://") > 0 || url.indexOf("//") === 0
