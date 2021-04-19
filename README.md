@@ -74,13 +74,39 @@ The easiest way to deploy a Gatsby website to production is to use Gatsby Cloud 
 
 ### How to Register Page Modules
 
-1. To create a new Page Module, create a new React component within the `/src/components/agility-pageModules` directory.
-2. Make sure the name of your React component matches the name of the Page Module you created in Agility, i.e. If you have a Page Module named "Featured Post", your React component should be named `FeaturedPost.jsx`.
+1. To create a new Page Module, create a new React component within the `src/components/agility-pageModules` directory.
+2. All of the Page Modules that are being used within the site need to be imported into the `index` file within the `src/components/agility-pageModules` directory and added to the `allModules` array:
+
+```
+import RichTextArea from "./RichTextArea";
+import FeaturedPost from "./FeaturedPost";
+import PostsListing from "./PostsListing";
+import PostDetails from "./PostDetails";
+import Heading from "./Heading";
+import TextBlockWithImage from "./TextBlockWithImage";
+
+const allModules = [
+  { name: "TextBlockWithImage", module: TextBlockWithImage },
+  { name: "Heading", module: Heading },
+  { name: "FeaturedPost", module: FeaturedPost },
+  { name: "PostsListing", module: PostsListing },
+  { name: "PostDetails", module: PostDetails },
+  { name: "RichTextArea", module: RichTextArea },
+];
+```
 
 ### How to Register Page Templates
 
-1. To create a new Page Template, create a new React component within the `/src/components/agility-pageTemplates` directory.
-2. Make sure the name of your React component matches the name of the Page Template you created in Agility, i.e. If you have a Page Template named "Main Template", your React component should be named `MainTemplate.jsx`.
+1. To create a new Page Template, create a new React component within the `src/components/agility-pageTemplates` directory.
+2. All of the Page Template that are being used within the site need to be imported into the `index` file within the `src/components/agility-pageTemplates` directory and added to the `allTemplates` array:
+
+```
+import MainTemplate from "./MainTemplate";
+
+const allTemplates = [
+  { name: "MainTemplate", template: MainTemplate }
+];
+```
 
 ### How to Properly Link to an Internal Page
 
