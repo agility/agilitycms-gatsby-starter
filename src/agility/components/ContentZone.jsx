@@ -29,7 +29,7 @@ export const ContentZone = ({
         return <AgilityModule key={m.item.contentID} {...props} />
       } else {
         throw new Error(
-          `React Component for ${m.moduleName} was not found in the Agility Modules list.`
+          `React Component for ${m.module} was not found in the Agility Modules list.`
         )
       }
     })
