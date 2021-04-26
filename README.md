@@ -27,7 +27,7 @@ To start using the Agility CMS & Gatsby Starter, [sign up](https://agilitycms.co
 1. Clone this repository
 2. Run `npm install` or `yarn install`
 3. Rename the `.env.development.example` file to `.env.development`
-4. Retrieve your `GUID`, `API Keys (Preview/Fetch)`, and `Security Key` from Agility CMS by going to [Settings > API Keys](https://manager.agilitycms.com/settings/apikeys).
+4. Retrieve your `GUID` & `API Keys (Preview/Fetch)` from Agility CMS by going to [Settings > API Keys](https://manager.agilitycms.com/settings/apikeys).
 
 [How to Retrieve your GUID and API Keys from Agility](https://help.agilitycms.com/hc/en-us/articles/360031919212-Retrieving-your-API-Key-s-Guid-and-API-URL-)
 
