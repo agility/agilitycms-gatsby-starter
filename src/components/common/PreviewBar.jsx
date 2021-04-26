@@ -9,7 +9,7 @@ class PreviewBar extends Component {
 
   render() {
     let mode
-    if (this.props.isPreview === "true") {
+    if (this.props.isPreview === true) {
       mode = (
         <p className="text-xs md:text-base">
           Previewing <span className="font-bold">Latest</span> Changes
