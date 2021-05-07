@@ -73,7 +73,7 @@ const PostListing = () => {
                 </div>
                 <div className="bg-gray-100 p-8 border-2 border-t-0 rounded-b-lg">
                   <div className="uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose">
-                    {post.linkedContent_agilityCategory.customFields.title}
+                    {post.linkedContent_agilityCategory?.customFields.title || "Uncategorized"}
                   </div>
                   <div className="border-b-2 border-primary-500 w-8"></div>
                   <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
