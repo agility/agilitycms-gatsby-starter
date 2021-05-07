@@ -68,11 +68,7 @@ When running your site in `production` mode, you will see the published from the
 
 The easiest way to deploy a Gatsby website to production is to use Gatsby Cloud from the Gatsby team. Gatsby Cloud is a platform that gives your Gatsby website superpowers! With intelligent caching and incremental builds, Gatsby Cloud takes the speed and performance of your Gatsby website to another level.
 
-https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/agility/agilitycms-gatsby-starter
-
-By clicking the button above, you can get this starter repo deployed to Gatsby Cloud within minutes!
-
-[Deploy your site to Gatsby Cloud](https://help.agilitycms.com/hc/en-us/articles/360050426711)
+[Deploy your site to Gatsby Cloud](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/agility/agilitycms-gatsby-starter)
 
 ## Notes
 
