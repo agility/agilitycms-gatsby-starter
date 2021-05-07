@@ -50,7 +50,7 @@ const FeaturedPost = ({ module }) => {
             className="cursor-pointer"
           >
             <div className="font-display uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {featuredPost.customFields.category.customFields.title}
+              {featuredPost.customFields.category?.customFields.title || "Uncategorized"}
             </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
             <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
