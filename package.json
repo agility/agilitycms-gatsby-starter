@@ -17,7 +17,6 @@
     "@agility/gatsby-source-agilitycms": "^3.0.0",
     "@tailwindcss/typography": "^0.4.0",
     "dotenv": "^8.1.0",
-    "framer-motion": "^4.1.17",
     "gatsby": "^3.2.1",
     "gatsby-plugin-image": "^1.0.1",
     "gatsby-plugin-netlify": "^3.0.0",
